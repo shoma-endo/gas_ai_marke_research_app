@@ -1,6 +1,6 @@
 // 設定オブジェクト
 const CONFIG = {
-  apiKey: PropertiesService.getScriptProperties().getProperty("apiKey"),
+  apiKey: PropertiesService.getScriptProperties().getProperty("apiKey"), // OpenAIのAPIKey取得
   apiUrl: "https://api.openai.com/v1/chat/completions",
   sheet: SpreadsheetApp.getActiveSpreadsheet().getActiveSheet(),
   headers: {
